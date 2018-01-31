@@ -13,11 +13,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S25 . . . ]
 "372
 [v _INTCONbits `VS25 ~T0 @X0 0 e@11 ]
-"192 mcc_generated_files/adc.h
-[v _ADC_StartConversion `(v ~T0 @X0 0 ef ]
 "67 main.c
 [c E12065 4 29 30 31 .. ]
 [n E12065 . POT1_AN4 channel_Temp channel_DAC channel_FVR  ]
+"165 mcc_generated_files/adc.h
+[v _ADC_SelectChannel `(v ~T0 @X0 0 ef1`E12065 ]
+"192
+[v _ADC_StartConversion `(v ~T0 @X0 0 ef ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -10907,23 +10909,26 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 60: (INTCONbits.PEIE = 1);
 "60
 [e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
-[; ;main.c: 67: ADC_StartConversion(POT1_AN4);
+[; ;main.c: 67: ADC_SelectChannel(POT1_AN4);
 "67
-[e ( _ADC_StartConversion -> . `E12065 0 `i ]
-[; ;main.c: 69: while (1)
-"69
-[e :U 1214 ]
-[; ;main.c: 70: {
+[e ( _ADC_SelectChannel (1 . `E12065 0 ]
+[; ;main.c: 68: ADC_StartConversion();
+"68
+[e ( _ADC_StartConversion ..  ]
+[; ;main.c: 70: while (1)
 "70
+[e :U 1214 ]
+[; ;main.c: 71: {
+"71
 {
-"72
+"73
 }
 [e :U 1213 ]
-"69
+"70
 [e $U 1214  ]
 [e :U 1215 ]
-[; ;main.c: 72: }
 [; ;main.c: 73: }
-"73
+[; ;main.c: 74: }
+"74
 [e :UE 1212 ]
 }

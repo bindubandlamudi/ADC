@@ -14937,7 +14937,8 @@ SYSTEM_Initialize();
 (INTCONbits.PEIE = 1);
 
 # 67
-ADC_StartConversion(POT1_AN4);
+ADC_SelectChannel(POT1_AN4);
+ADC_StartConversion();
 
 while (1)
 {

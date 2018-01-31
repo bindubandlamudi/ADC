@@ -67,6 +67,8 @@ channel_FVR 31
 [v _main main `(v  1 e 1 0 ]
 "62 C:\Users\C20590\MPLABXProjects\ADC_PWM.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"85
+[v _ADC_SelectChannel ADC_SelectChannel `(v  1 e 1 0 ]
 "93
 [v _ADC_StartConversion ADC_StartConversion `(v  1 e 1 0 ]
 "106
@@ -110,7 +112,7 @@ channel_FVR 31
 ]
 [u S55 . 1 `S41 1 . 1 0 `S50 1 . 1 0 ]
 [v _INTCONbits INTCONbits `VES55  1 e 1 @11 ]
-[s S190 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[s S195 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSP1IF 1 0 :1:3 
@@ -120,9 +122,9 @@ channel_FVR 31
 `uc 1 TMR1GIF 1 0 :1:7 
 ]
 "595
-[u S199 . 1 `S190 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES199  1 e 1 @16 ]
-[s S242 . 1 `uc 1 CCP2IF 1 0 :1:0 
+[u S204 . 1 `S195 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES204  1 e 1 @16 ]
+[s S247 . 1 `uc 1 CCP2IF 1 0 :1:0 
 `uc 1 TMR4IF 1 0 :1:1 
 `uc 1 TMR6IF 1 0 :1:2 
 `uc 1 BCL1IF 1 0 :1:3 
@@ -132,15 +134,15 @@ channel_FVR 31
 `uc 1 OSFIF 1 0 :1:7 
 ]
 "657
-[u S251 . 1 `S242 1 . 1 0 ]
-[v _PIR2bits PIR2bits `VES251  1 e 1 @17 ]
+[u S256 . 1 `S247 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES256  1 e 1 @17 ]
 "1612
 [v _TRISA TRISA `VEuc  1 e 1 @140 ]
 "1662
 [v _TRISB TRISB `VEuc  1 e 1 @141 ]
 "1701
 [v _TRISC TRISC `VEuc  1 e 1 @142 ]
-[s S169 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[s S174 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 CCP1IE 1 0 :1:2 
 `uc 1 SSP1IE 1 0 :1:3 
@@ -150,9 +152,9 @@ channel_FVR 31
 `uc 1 TMR1GIE 1 0 :1:7 
 ]
 "1780
-[u S178 . 1 `S169 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES178  1 e 1 @144 ]
-[s S108 . 1 `uc 1 PS 1 0 :3:0 
+[u S183 . 1 `S174 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES183  1 e 1 @144 ]
+[s S113 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 TMR0SE 1 0 :1:4 
 `uc 1 TMR0CS 1 0 :1:5 
@@ -160,15 +162,15 @@ channel_FVR 31
 `uc 1 nWPUEN 1 0 :1:7 
 ]
 "2074
-[s S115 . 1 `uc 1 PS0 1 0 :1:0 
+[s S120 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
 ]
-[u S122 . 1 `S108 1 . 1 0 `S115 1 . 1 0 ]
-[v _OPTION_REGbits OPTION_REGbits `VES122  1 e 1 @149 ]
+[u S127 . 1 `S113 1 . 1 0 `S120 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES127  1 e 1 @149 ]
 "2196
 [v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
 "2254
@@ -179,12 +181,12 @@ channel_FVR 31
 [v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
 "2429
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
-[s S514 . 1 `uc 1 ADON 1 0 :1:0 
+[s S519 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS 1 0 :5:2 
 ]
 "2454
-[s S518 . 1 `uc 1 . 1 0 :1:0 
+[s S523 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 ADGO 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
@@ -192,18 +194,18 @@ channel_FVR 31
 `uc 1 CHS3 1 0 :1:5 
 `uc 1 CHS4 1 0 :1:6 
 ]
-[s S526 . 1 `uc 1 . 1 0 :1:0 
+[s S531 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 ]
-[u S529 . 1 `S514 1 . 1 0 `S518 1 . 1 0 `S526 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES529  1 e 1 @157 ]
+[u S534 . 1 `S519 1 . 1 0 `S523 1 . 1 0 `S531 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES534  1 e 1 @157 ]
 "2509
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
 "2575
 [v _ADCON2 ADCON2 `VEuc  1 e 1 @159 ]
 "2623
 [v _LATA LATA `VEuc  1 e 1 @268 ]
-[s S555 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S560 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -211,13 +213,13 @@ channel_FVR 31
 `uc 1 LATA5 1 0 :1:5 
 ]
 "2638
-[u S562 . 1 `S555 1 . 1 0 ]
-[v _LATAbits LATAbits `VES562  1 e 1 @268 ]
+[u S567 . 1 `S560 1 . 1 0 ]
+[v _LATAbits LATAbits `VES567  1 e 1 @268 ]
 "2673
 [v _LATB LATB `VEuc  1 e 1 @269 ]
 "2712
 [v _LATC LATC `VEuc  1 e 1 @270 ]
-[s S572 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S577 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -227,8 +229,8 @@ channel_FVR 31
 `uc 1 LATC7 1 0 :1:7 
 ]
 "2729
-[u S581 . 1 `S572 1 . 1 0 ]
-[v _LATCbits LATCbits `VES581  1 e 1 @270 ]
+[u S586 . 1 `S577 1 . 1 0 ]
+[v _LATCbits LATCbits `VES586  1 e 1 @270 ]
 "3048
 [v _BORCON BORCON `VEuc  1 e 1 @278 ]
 "3323
@@ -259,12 +261,12 @@ channel_FVR 31
 [v _PR6 PR6 `VEuc  1 e 1 @1051 ]
 "8251
 [v _T6CON T6CON `VEuc  1 e 1 @1052 ]
-[s S386 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S391 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 CKPS 1 0 :3:4 
 `uc 1 ON 1 0 :1:7 
 ]
 "8287
-[s S390 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S395 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
@@ -272,11 +274,11 @@ channel_FVR 31
 `uc 1 CKPS1 1 0 :1:5 
 `uc 1 CKPS2 1 0 :1:6 
 ]
-[s S398 . 1 `uc 1 T6OUTPS 1 0 :4:0 
+[s S403 . 1 `uc 1 T6OUTPS 1 0 :4:0 
 `uc 1 T6CKPS 1 0 :3:4 
 `uc 1 T6ON 1 0 :1:7 
 ]
-[s S402 . 1 `uc 1 T6OUTPS0 1 0 :1:0 
+[s S407 . 1 `uc 1 T6OUTPS0 1 0 :1:0 
 `uc 1 T6OUTPS1 1 0 :1:1 
 `uc 1 T6OUTPS2 1 0 :1:2 
 `uc 1 T6OUTPS3 1 0 :1:3 
@@ -285,60 +287,60 @@ channel_FVR 31
 `uc 1 T6CKPS2 1 0 :1:6 
 `uc 1 TMR6ON 1 0 :1:7 
 ]
-[u S411 . 1 `S386 1 . 1 0 `S390 1 . 1 0 `S398 1 . 1 0 `S402 1 . 1 0 ]
-[v _T6CONbits T6CONbits `VES411  1 e 1 @1052 ]
+[u S416 . 1 `S391 1 . 1 0 `S395 1 . 1 0 `S403 1 . 1 0 `S407 1 . 1 0 ]
+[v _T6CONbits T6CONbits `VES416  1 e 1 @1052 ]
 "8397
 [v _T6HLT T6HLT `VEuc  1 e 1 @1053 ]
-[s S286 . 1 `uc 1 MODE 1 0 :5:0 
+[s S291 . 1 `uc 1 MODE 1 0 :5:0 
 `uc 1 CKSYNC 1 0 :1:5 
 `uc 1 CKPOL 1 0 :1:6 
 `uc 1 PSYNC 1 0 :1:7 
 ]
 "8430
-[s S291 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S296 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 `uc 1 MODE4 1 0 :1:4 
 ]
-[s S297 . 1 `uc 1 T6MODE 1 0 :5:0 
+[s S302 . 1 `uc 1 T6MODE 1 0 :5:0 
 `uc 1 T6CKSYNC 1 0 :1:5 
 `uc 1 T6CKPOL 1 0 :1:6 
 `uc 1 T6PSYNC 1 0 :1:7 
 ]
-[s S302 . 1 `uc 1 T6MODE0 1 0 :1:0 
+[s S307 . 1 `uc 1 T6MODE0 1 0 :1:0 
 `uc 1 T6MODE1 1 0 :1:1 
 `uc 1 T6MODE2 1 0 :1:2 
 `uc 1 T6MODE3 1 0 :1:3 
 `uc 1 T6MODE4 1 0 :1:4 
 ]
-[u S308 . 1 `S286 1 . 1 0 `S291 1 . 1 0 `S297 1 . 1 0 `S302 1 . 1 0 ]
-[v _T6HLTbits T6HLTbits `VES308  1 e 1 @1053 ]
+[u S313 . 1 `S291 1 . 1 0 `S296 1 . 1 0 `S302 1 . 1 0 `S307 1 . 1 0 ]
+[v _T6HLTbits T6HLTbits `VES313  1 e 1 @1053 ]
 "8525
 [v _T6CLKCON T6CLKCON `VEuc  1 e 1 @1054 ]
 "8605
 [v _T6RST T6RST `VEuc  1 e 1 @1055 ]
-[s S352 . 1 `uc 1 RSEL 1 0 :4:0 
+[s S357 . 1 `uc 1 RSEL 1 0 :4:0 
 ]
 "8630
-[s S354 . 1 `uc 1 RSEL0 1 0 :1:0 
+[s S359 . 1 `uc 1 RSEL0 1 0 :1:0 
 `uc 1 RSEL1 1 0 :1:1 
 `uc 1 RSEL2 1 0 :1:2 
 `uc 1 RSEL3 1 0 :1:3 
 ]
-[s S359 . 1 `uc 1 T6RSEL 1 0 :4:0 
+[s S364 . 1 `uc 1 T6RSEL 1 0 :4:0 
 ]
-[s S361 . 1 `uc 1 T6RSEL0 1 0 :1:0 
+[s S366 . 1 `uc 1 T6RSEL0 1 0 :1:0 
 `uc 1 T6RSEL1 1 0 :1:1 
 `uc 1 T6RSEL2 1 0 :1:2 
 `uc 1 T6RSEL3 1 0 :1:3 
 ]
-[u S366 . 1 `S352 1 . 1 0 `S354 1 . 1 0 `S359 1 . 1 0 `S361 1 . 1 0 ]
-[v _T6RSTbits T6RSTbits `VES366  1 e 1 @1055 ]
+[u S371 . 1 `S357 1 . 1 0 `S359 1 . 1 0 `S364 1 . 1 0 `S366 1 . 1 0 ]
+[v _T6RSTbits T6RSTbits `VES371  1 e 1 @1055 ]
 "48 C:\Users\C20590\MPLABXProjects\ADC_PWM.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"73
+"74
 } 0
 "77 C:\Users\C20590\MPLABXProjects\ADC_PWM.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -369,6 +371,15 @@ channel_FVR 31
 [v _ADC_StartConversion ADC_StartConversion `(v  1 e 1 0 ]
 {
 "97
+} 0
+"85
+[v _ADC_SelectChannel ADC_SelectChannel `(v  1 e 1 0 ]
+{
+[v ADC_SelectChannel@channel channel `E11990  1 a 1 wreg ]
+[v ADC_SelectChannel@channel channel `E11990  1 a 1 wreg ]
+"88
+[v ADC_SelectChannel@channel channel `E11990  1 a 1 6 ]
+"91
 } 0
 "51 C:\Users\C20590\MPLABXProjects\ADC_PWM.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]

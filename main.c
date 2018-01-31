@@ -64,7 +64,8 @@ void main(void)
 
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
-    ADC_StartConversion(POT1_AN4);
+    ADC_SelectChannel(POT1_AN4);
+    ADC_StartConversion();
 
     while (1)
     {
